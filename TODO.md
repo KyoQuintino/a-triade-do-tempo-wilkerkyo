@@ -1,0 +1,8 @@
+# TODO
+
+- [x] **Página de vendas responsiva do e-book.** Criado site profissional, hiper-realista e cinematográfico para “A Tríade do Tempo”, com experiência adaptada a celular e desktop, apresentação do e-book e autoria baseada no PDF, hierarquia editorial, mockup do e-book e CTAs de navegação.
+- [x] **Metodologia e conteúdo.** A página explica a metodologia Tríade do Tempo e suas esferas urgente, importante e circunstancial; apresenta os temas identidade, metas, planejamento, organização e execução, sem acrescentar conteúdo promocional não sustentado pelo PDF.
+- [x] **Depoimento e selo informativo.** A página inclui uma citação curta, exata e atribuída a Gustavo Cerbasi, identificada como trecho do prefácio, não como depoimento de aluno. O selo visual informa somente “Formato digital / Arquivo em PDF”; não sugere certificação, garantia ou chancela. CTAs levam à seção do e-book. O checkout final só é ativado quando a URL oficial da Hotmart for inserida.
+- [x] **Imagem de divulgação.** Gerada e integrada uma imagem hiper-realista e cinematográfica do e-book, adequada para capa e divulgação na Hotmart.
+- [x] **Cadastro Hotmart.** Criados título e descrição comercial em `hotmart-copy.md`, fiéis ao conteúdo do PDF e sem promessas de resultados não comprovadas.
+- [ ] **Informações comerciais pendentes.** Receber e inserir o link oficial do checkout Hotmart. Se forem desejados depoimentos de clientes além do trecho autêntico do prefácio, receber os textos e as atribuições autorizadas. Caso exista selo oficial de certificação, garantia ou chancela a exibir, receber a arte, o texto e as regras reais antes de adicioná-lo.
