@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 const coverImage = "/triade-do-tempo-cover.webp";
-const hotmartCheckoutUrl = ""; // Adicione aqui o link oficial de checkout Hotmart para ativar a compra.
+const kiwifyCheckoutUrl = "https://pay.kiwify.com.br/geaafqF";
 
 const steps = [
   {
@@ -68,9 +68,9 @@ const faqs = [
       "A metodologia é apresentada em cinco fases: identidade, metas, planejamento, organização e execução. O livro também discute as escolhas que influenciam a forma como usamos o tempo.",
   },
   {
-    question: "O checkout Hotmart já está conectado?",
+    question: "Como funciona o pagamento?",
     answer:
-      "A página está preparada para receber o checkout, mas o link oficial ainda precisa ser inserido. O botão de compra será ativado assim que a URL for informada.",
+      "Ao selecionar “Comprar na Kiwify”, você será encaminhado para a página de pagamento informada.",
   },
 ];
 
@@ -87,24 +87,16 @@ function BrandMark() {
   );
 }
 
-function PurchaseButton({ compact = false }: { compact?: boolean }) {
-  if (hotmartCheckoutUrl) {
-    return (
-      <a
-        className={`button button-gold${compact ? " button-small" : ""}`}
-        href={hotmartCheckoutUrl}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Comprar na Hotmart <ArrowUpRight size={17} aria-hidden="true" />
-      </a>
-    );
-  }
-
+function PurchaseButton() {
   return (
-    <button className={`button button-gold${compact ? " button-small" : ""}`} disabled type="button">
-      Checkout Hotmart em configuração
-    </button>
+    <a
+      className="button button-gold"
+      href={kiwifyCheckoutUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Comprar na Kiwify <ArrowUpRight size={17} aria-hidden="true" />
+    </a>
   );
 }
 
@@ -277,7 +269,7 @@ export default function Home() {
             <p>Christian Barbosa</p>
             <div className="format-seal"><span className="seal-ring"><NotebookPen size={19} strokeWidth={1.5} aria-hidden="true" /></span><span><strong>Formato digital</strong><small>Arquivo em PDF</small></span></div>
             <PurchaseButton />
-            {!hotmartCheckoutUrl && <p className="checkout-note">O link oficial de checkout Hotmart será conectado após o envio da URL.</p>}
+            <p className="checkout-note">Ao continuar, você será direcionado para a página de pagamento da Kiwify.</p>
             <span className="offer-safe-note"><Check size={13} aria-hidden="true" /> Informações baseadas no conteúdo do livro</span>
           </div>
         </section>
